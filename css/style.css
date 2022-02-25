@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-video {
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.container-video .video {
+  width: 100%;
+}
+.container-video .controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%);
+  transition: all 0.2s;
+}
+.container-video .controls .barre-orange {
+  height: 10px;
+  width: 100%;
+  background: black;
+  cursor: pointer;
+}
+.container-video .controls .barre-orange .juice {
+  height: 10px;
+  background-color: orangered;
+}
+.container-video .controls .buttons {
+  padding: 5px 10px 10px;
+}
+.container-video .controls .buttons button {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+.container-video:hover .controls {
+  transform: translateY(0);
+}
+
+#mute {
+  position: relative;
+  top: -5px;
+  margin: 0 12px;
+}
+
+#play-pause img {
+  width: 30px;
+  position: relative;
+  top: 5px;
+}
+
+#fullscreen {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+}
+#fullscreen img {
+  width: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
